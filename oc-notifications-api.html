@@ -40,7 +40,7 @@
         behaviors: [OC.Behaviours.ApiProvider],
 
         getEventTypes: function() {
-          this.$.getEventTypes.url = this._url('/notifications/event_types');
+          this.$.getEventTypes.url = this._url('notifications/event_types');
           return this._generateRequest(this.$.getEventTypes);
         },
 
